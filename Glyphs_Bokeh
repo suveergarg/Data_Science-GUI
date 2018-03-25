@@ -1,0 +1,26 @@
+# Import figure from bokeh.plotting
+from bokeh.plotting import figure
+
+# Import output_file and show from bokeh.io
+from bokeh.io import output_file, show
+
+# Create the figure: p
+p = figure(x_axis_label='X', y_axis_label='Y')
+
+# Add a circle glyph to the figure p
+p.circle(Y,X, size=10, alpha=0.8, color='blue')
+
+# Add X Glyph
+p.x(Y1,X1)
+
+# Line Glyph
+p.line(X , Y)
+
+# Pathes : X and Y are lists
+p.patches(x,y,line_color='white')
+
+# Call the output_file() function and specify the name of the file
+output_file('ABC.html')
+
+# Display the plot
+show(p)
