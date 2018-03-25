@@ -1,0 +1,6 @@
+from bokeh.plotting import ColumnDataSource
+
+# Create a ColumnDataSource from df: source
+source = ColumnDataSource(df)
+
+p.circle('X_col','Y_col',source=source,color='color')
