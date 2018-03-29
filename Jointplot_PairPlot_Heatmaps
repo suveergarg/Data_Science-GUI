@@ -1,0 +1,30 @@
+# Generate a joint plot of 'hp' and 'mpg'
+sns.jointplot(x='hp',y='mpg',data=auto)
+
+# Display the plot
+plt.show()
+
+
+#Pair Plots
+
+
+# Print the first 5 rows of the DataFrame
+print(auto.head())
+
+# Plot the pairwise joint distributions from the DataFrame 
+sns.pairplot(auto)
+
+# Display the plot
+plt.show()
+
+
+#Heatmaps
+
+#Print the covariance matrix
+print(cov_matrix)
+
+# Visualize the covariance matrix using a heatmap
+sns.heatmap(cov_matrix)
+
+# Display the heatmap
+plt.show()
